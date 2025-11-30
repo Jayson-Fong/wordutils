@@ -1,0 +1,59 @@
+[project]
+name = "wordutils"
+version = "0.1.0"
+requires-python = ">=3.9"
+authors = [
+    {name = "Jayson Fong", email = "jayson.fong@gatech.edu"}
+]
+description = "Transform and filter text from the command-line"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+]
+
+[project.urls]
+Homepage = "https://github.com/Jayson-Fong/wordutils"
+Issues = "https://github.com/Jayson-Fong/wordutils/issues"
+
+[project.scripts]
+# Concatenation
+wordutils-prefix = "wordutils.concat:prefix"
+wordutils-suffix = "wordutils.concat:suffix"
+
+# Filtering
+wordutils-filter-blank = "wordutils.filter:blank"
+wordutils-filter-nonblank = "wordutils.filter:nonblank"
+wordutils-filter-title = "wordutils.filter:title"
+wordutils-filter-nontitle = "wordutils.filter:nontitle"
+
+# Normalization
+wordutils-strip = "wordutils.normalize:strip"
+wordutils-lstrip = "wordutils.normalize:lstrip"
+wordutils-rstrip = "wordutils.normalize:rstrip"
+
+# Transform
+wordutils-reverse = "wordutils.transform:reverse"
+wordutils-upper = "wordutils.transform:upper"
+wordutils-lower = "wordutils.transform:lower"
+wordutils-swapcase = "wordutils.transform:swapcase"
+wordutils-capitalize = "wordutils.transform:capitalize"
+wordutils-title = "wordutils.transform:title"
+
+# Wrapping
+wordutils-wrap = "wordutils.wrap:wrap"
+wordutils-single-quote = "wordutils.wrap:single_quote"
+wordutils-double-quote = "wordutils.wrap:double_quote"
+
+# HTML
+wordutils-html-escape = "wordutils.html:escape"
