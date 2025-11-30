@@ -73,6 +73,86 @@ Producing the following:
 
 </details>
 
+# Usage
+
+All commands incorporate three core arguments:
+
+```
+-h, --help                              show the help message and exit
+--input INPUT, -i INPUT, -r INPUT       sets the input file
+--output OUTPUT, -o OUTPUT, -w OUTPUT   sets the output file
+```
+
+When `--input` or `--output` are unspecified, they default to standard input and output, respectively.
+
+<details>
+<summary>Concatenation Commands</summary>
+
+### wordutils-prefix [prefixes ...]
+
+### wordutils-suffix [suffixes ...]
+
+</details>
+
+<details>
+<summary>Filtering Commands</summary>
+
+### wordutils-filter-blank
+
+### wordutils-filter-nonblank
+
+### wordutils-filter-title
+
+### wordutils-filter-nontitle
+
+</details>
+
+<details>
+<summary>Normalization Commands</summary>
+
+### wordutils-strip
+
+### wordutils-lstrip
+
+### wordutils-rstrip
+
+</details>
+
+<details>
+<summary>Normalization Commands</summary>
+
+### wordutils-reverse
+
+### wordutils-upper
+
+### wordutils-lower
+
+### wordutils-swapcase
+
+### wordutils-capitalize
+
+### wordutils-title
+
+</details>
+
+<details>
+<summary>Wrapping Commands</summary>
+
+### wordutils-wrap [--wraps START END] [START] [END]
+
+### wordutils-single-quote
+
+### wordutils-double-quote
+
+</details>
+
+<details>
+<summary>HTML Commands</summary>
+
+### wordutils-html-escape
+
+</details>
+
 # Installation
 
 <!--
